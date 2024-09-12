@@ -1,0 +1,188 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Login" this:Login.path="C:\Users\manjj\Desktop\uidemo.exe" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="path" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1151,1282</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Login_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Services.RuntimeAnalyze</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Net</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Login" sap:VirtualizedContainerService.HintSize="512,1217" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="admin" Name="admin" />
+      <Variable x:TypeArguments="ss:SecureString" Name="password" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="UiDemo" sap:VirtualizedContainerService.HintSize="450,1129" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" IsIncognito="True" ScopeGuid="b92d6c89-a51e-4367-83a1-c4bf7b466e5f" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,813" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="uidemoCred" CacheStrategy="None" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="354,176" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[password]" Username="[admin]" />
+            <ui:TypeInto AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Into 'editable text  user'" sap:VirtualizedContainerService.HintSize="354,188" sap2010:WorkflowViewState.IdRef="TypeInto_2" Text="[admin]">
+              <ui:TypeInto.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3e11186c-1756-4539-a37e-5289abebc7ad" InformativeScreenshot="45905b08d145e0f51f1b19783a397b9a" Selector="&lt;ctrl automationid='user' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeInto.Target>
+            </ui:TypeInto>
+            <ui:TypeSecureText AlterIfDisabled="{x:Null}" ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" DisplayName="Type Secure Text 'editable text  pass'" sap:VirtualizedContainerService.HintSize="354,139" sap2010:WorkflowViewState.IdRef="TypeSecureText_1" SecureText="[password]">
+              <ui:TypeSecureText.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a4fe2a75-0f15-4f13-97ed-83f48adb1a99" InformativeScreenshot="638237f00bf8666d25bd30f94b0ed422" Selector="&lt;ctrl automationid='pass' /&gt;">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TypeSecureText.Target>
+            </ui:TypeSecureText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="354,220" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b92d6c89-a51e-4367-83a1-c4bf7b466e5f" Version="V4">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CVScreenId="eb3bb815-1fc0-4262-8da5-25ed4cf0b633" CvElementArea="288, 564, 230, 68" CvTextArea="351, 579, 102, 45" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="354, 574, 99, 48" DesignTimeScaleFactor="3" ElementType="Text" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;&lt;ctrl name='Log In' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;&lt;ctrl name='Log In' role='text' automationid='' check:text='Log In' /&gt;" Guid="6d660f72-7f36-414d-8c88-ee0788b47ae0" InformativeScreenshot="3c85f30b736c92ce335873686c036598.png" ScopeSelectorArgument="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CVScreenId="eb3bb815-1fc0-4262-8da5-25ed4cf0b633" CvElementArea="288, 564, 230, 68" CvTextArea="351, 579, 102, 45" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="291, 568, 225, 60" ElementType="Button" FullSelectorArgument="&lt;ctrl name='Log In' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Log In' role='push button' automationid='' check:text='Log In' /&gt;" Guid="f8073930-851e-4bee-ae6d-4b8cafe18fef" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+              <uix:NClick.VerifyOptions>
+                <uix:VerifyExecutionOptions DisplayName="{x:Null}" Mode="Appears">
+                  <uix:VerifyExecutionOptions.Retry>
+                    <InArgument x:TypeArguments="x:Boolean" />
+                  </uix:VerifyExecutionOptions.Retry>
+                  <uix:VerifyExecutionOptions.Timeout>
+                    <InArgument x:TypeArguments="x:Double" />
+                  </uix:VerifyExecutionOptions.Timeout>
+                </uix:VerifyExecutionOptions>
+              </uix:NClick.VerifyOptions>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="360, 360, 780, 691" ContentHash="DRzNoDD6lU-uSsGg8_4tFA" FilePath="[path]" IconBase64="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" InformativeScreenshot="6d3dffcf5a1b8f7f976798f5ae6b0a9f.png" IsExactTitleEnabled="True" Reference="eLTj10Ogk0O7Uc--JymhJA/jnaoiR8W9kOxJe-oBzBwVQ" Selector="&lt;wnd app='uidemo.exe' cls='HwndWrapper*' title='UiDemo' /&gt;" Title="UiDemo" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
